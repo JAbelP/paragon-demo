@@ -99,7 +99,7 @@ export default function Home() {
       </div>
       {showTimeListing.map((film: Movie) => {
         return (
-          <div>
+          <div key={film.name}>
             <ShowtimeListing
               titleOfMovie={film.name}
               Rating={film.rating}
